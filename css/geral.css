@@ -50,3 +50,23 @@ header.masthead .intro-text .btn-primary:active .btn-primary:focus, .btn-primary
     color: white;
     
 }
+
+
+section {
+    padding: 100px 0;
+}
+
+section h2 .section-heading{
+    font-size: 40px;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+section h3 .section-subheading{
+    font-size: 16px;
+    font-weight: 400px;
+    font-style:italic;
+    margin-bottom: 75px;
+    transform: none;
+    font-family: 'droid Serif', 'Helvica Neue', 'Helvica', sans-serif;
+}
