@@ -11,8 +11,11 @@
     />
 
     <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
     />
 
     <link rel="stylesheet" href="css/style.css" />
@@ -20,7 +23,7 @@
     <title>WEB CONFERENCE</title>
   </head>
 
-  <body>
+  <body id="page-top">
     <!-- Barra de Navegação -->
 
     <!-- <nav class="navbar navbar-expand-lg fixed-top navbar-light "> -->
@@ -39,17 +42,20 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav text-light text-uppercase ml-auto">
             <li class="nav-item">
-              <a href="#sobre" class="nav-link text-light">sobre</a>
+              <a href="#about" class="nav-link text-light">sobre</a>
             </li>
             <li class="nav-item">
-              <a href="#speakears" class="nav-link text-light">speakers</a>
+              <a href="#speakers" class="nav-link text-light">speakers</a>
             </li>
             <li class="nav-item">
-              <a href="#spokears" class="nav-link text-light">spokers</a>
+              <a href="#sponsors" class="nav-link text-light">sponsors</a>
             </li>
             <li class="nav-item">
               <a href="#contacts" class="nav-link text-light">contactos</a>
             </li>
+            <li class="nav-item">
+                <a id="btnLogin" class="nav-link text-light" href="#">ÁREA PRIVADA</a>
+              </li>
             <li class="nav-item dropdown position-static text-light"></li>
           </ul>
         </div>
@@ -74,46 +80,149 @@
     </header>
 
     <!-- Informação básica sobre a conferencia -->
-    <section id="about"></section>
+    <section id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">Sobre</h2>
+          <h3 class="section-subheading">Conference sobre security</h3>
+        </div>
+      </div>
+      <div class="row text-center">
+        <div class="col-md-6">
+          <span class="fa-stack fa-4x">
+            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+            <i class="fas fa-globe fa-stack-1x fa-inverse"></i>
+          </span>
+          <h4 class="topic-heading">Computação Ubíqua</h4>
+          <p class="text-muted">
+            Expandir a Web para fora do computador e ligá-la à Internet das
+            Coisas!
+          </p>
+        </div>
+        <div class="col-md-6">
+          <span class="fa-stack fa-4x">
+            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+            <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
+          </span>
+          <h4 class="topic-heading">Computação Grafíca</h4>
+          <p class="text-muted">Expandir a Web de uma forma inteligente</p>
+        </div>
+      </div>
+    </div>
+</section>
+    <!-- Informação sobre os oradores da conferencia -->
+    <section class="bg-light" id="speakers">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading text-uppercase">Sobre</h2>
-                    <h3 class="section-subheading">Conference sobre security</h3>
-                </div>
+          <div class="row" >
+            <div class="col-lg-12 text-center">
+              <h2 class="section-heading text-uppercase">Oradores</h2>
+              <h3 class="section-subheading text-muted">Especialistas internacionais do mundo da Web.</h3>
             </div>
-            <div class="row text-center">
-                <div class="col-md-6">
-                    <span class="fa-stack fa-4x">
-              <i class="fas fa-circle fa-stack-2x text-primary"></i>
-              <i class="fas fa-globe fa-stack-1x fa-inverse"></i>
-            </span>
-            <h4 class="topic-heading">Computação Ubíqua</h4>
-            <p class="text-muted">Expandir a Web para fora do computador e ligá-la à Internet das Coisas!</p>
           </div>
-                <div class="col-md-6"><span class="fa-stack fa-4x">
-                  <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                    <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
-                </span>
-                <h4 class="topic-heading">Computação Grafíca</h4>
-                <p class="text-muted">Expandir a Web de uma forma inteligente</p>
-                </div>
+          <div class="row" id="renderSpeakers">
+          </div>
+          <div class="row">
+            <div class="col-lg-8 mx-auto text-center">
+              <p class="large text-muted">Oradores de grande qualidade que irão partilhar as últimas tendências do mundo do desenvolvimento para a Web!</p>
             </div>
+          </div>
         </div>
 
-    <section id="speakers">
-      <!-- Informação sobre os oradores da conferencia -->
-    </section>
-
+      </section>
+    
+       <!-- Informação sobre os sponsors da confencia -->
     <section id="sponsors">
-      <!-- Informação sobre os sponsors da confencia -->
+        <section id="sponsors" class="py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                      <h2 class="section-heading text-uppercase">Sponsors</h2>                
+                    </div>
+                  </div>
+              <div class="row" id="renderSponsors">        
+              </div>
+            </div>
+          </section>
+     
     </section>
-
+    <!-- Formulario para contactos  -->
     <section id="contacts">
-      <!-- Formulario para contactos  -->
+     
+        <div class="container">
+            <div class="row">
+              <div class="col-lg-12 text-center">
+                <h2 class="section-heading text-uppercase">Contactos</h2>
+                <h3 class="section-subheading text-muted">Deixe-nos a sua sugestão/dúvida e nós rapidamente entraremos em contacto consigo!</h3>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-12">
+                <form id="contactForm" name="sentMessage">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <input class="form-control" id="name" type="text" placeholder="o seu nome" required>                    
+                      </div>
+                      <div class="form-group">
+                        <input class="form-control" id="email" type="email" placeholder="o seu email" required>
+                      </div>
+                      <div class="form-group">
+                        <input class="form-control" id="phone" type="tel" placeholder="o seu nº de telemóvel">
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <textarea class="form-control" id="message" placeholder="a sua mensagem" required></textarea>
+                      </div>
+                    </div>
+                    
+                    <div class="col-lg-12 text-center">                  
+                      <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit">Enviar mensagem</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>      
+          </div>
+          <br><br>
+          <div class="container-fluid" id="googleMap">
+            <div class="row">
+            </div>
+            </div>
+
+
     </section>
 
-    <footer></footer>
+    <footer class="">    
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <span class="copyright">Copyright &copy; WebConference 2022</span>
+            </div>
+            <div class="col-md-6">
+              <ul class="list-inline social-buttons">
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            
+          </div>
+        </div>
+      </footer>
 
     <script src="js/webconf.js"></script>
     <script src="js/jquery.min.js"></script>
@@ -122,6 +231,7 @@
     <script src="js/main.js"></script>
     <script src="js/sweet2.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.26.9/sweetalert2.all.min.js"></script>
-    <script src="https://kit.fontawesome.com/7ee6a28387.js" crossorigin="anonymous"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDcYng9pBfj_LmDthyiydpfyy3bftchOmg&callback=myMap"></script>    
+    <script src="https://kit.fontawesome.com/7ee6a28387.js" crossorigin="anonymous" ></script>
   </body>
 </html>

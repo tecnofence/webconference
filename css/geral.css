@@ -70,3 +70,10 @@ section h3 .section-subheading{
     transform: none;
     font-family: 'droid Serif', 'Helvica Neue', 'Helvica', sans-serif;
 }
+
+#googleMap{
+    width: 100%;
+    height: 400px;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%)
+}
