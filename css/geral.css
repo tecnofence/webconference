@@ -1,0 +1,52 @@
+header.masthead{
+    text-align: center;
+    color:white;
+    background-image: url("../images/conference1.jpg");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+}
+
+header.masthead .intro-text{
+    padding-top: 350px;
+    padding-bottom: 200px;
+  
+}
+
+header.masthead .intro-text .intro-lead-in{
+    font-size: 1.5rem;
+    font-style: italic;
+    line-height: 22px;
+    margin-top: 25px;
+    font-family: 'droid Serif', 'Helvica Neue', 'Helvica', sans-serif;
+}
+
+header.masthead .intro-text .intro-heading{
+    font-size: 50px;
+    font-weight: 700;line-height: 50px;
+    margin-bottom: 20px;
+    
+} 
+.btn,
+header.masthead .intro-text .intro-heading {
+    font-family:'Montserrat', 'Helvetica Neue';
+    font-weight: 700;
+}
+
+.btn-xl{
+    font-size: 18px;
+    padding: 10px 40px;
+}
+
+header.masthead .intro-text .btn-primary{
+    background-color: #428bca;
+    border-color: #428bca;
+}
+
+header.masthead .intro-text .btn-primary:active .btn-primary:focus, .btn-primary:hover{
+    background-color: #3677b1 !important;
+    border-color:#3677b1 !important;
+    color: white;
+    
+}

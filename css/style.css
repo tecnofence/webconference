@@ -8289,3 +8289,15 @@ h1, h2, h3, h4, h5,
     letter-spacing: .1em; }
     .ftco-navbar-light .navbar-toggler:focus {
       outline: none !important; }
+
+      /* MEUS CSSS */
+
+      /* header.masthead{
+        text-align: center;
+        color:white;
+        background-image: url("../images/conference.jpg");
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-position: center;
+        background-size: cover;
+    } */
